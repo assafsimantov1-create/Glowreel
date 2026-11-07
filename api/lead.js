@@ -7,7 +7,7 @@ module.exports = async (req, res) => {
   if (b._honey) { res.statusCode = 303; res.setHeader("Location", "/thanks"); return res.end(); } // bot trap
   const email = String(b.email || "").trim();
   if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { res.statusCode = 303; res.setHeader("Location", "/thanks?e=email"); return res.end(); }
-  const company = String(b.brand || b.store || "").slice(0, 200);
+  const company = [b.brand, b.store, b.plan].filter(Boolean).map(String).join(" | ").slice(0, 250);
   try {
     const r = await fetch("https://connect.mailerlite.com/api/subscribers", {
       method: "POST",
