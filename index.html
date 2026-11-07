@@ -33,15 +33,20 @@ ul.f li{padding:5px 0}ul.f li:before{content:"✓ ";color:var(--accent);font-wei
 .before{background:#cfc6bd}
 .after{background:linear-gradient(160deg,#e9b48f,#c8734a 60%,#7a3e22)}
 footer{padding:40px 0;color:var(--soft);font-size:14px;border-top:1px solid var(--line)}
+
+.form{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:26px}
+.form h3{font-family:Fraunces,serif;font-size:22px;margin-bottom:12px;color:var(--ink)}
+.form input,.form textarea{width:100%;font:inherit;font-size:16px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;margin-bottom:10px;background:#fff;color:var(--ink)}
+.form button{width:100%;border:0;cursor:pointer;background:var(--ink);color:#fff;padding:15px;border-radius:999px;font-weight:600;font-size:16px}
 </style>
 </head>
 <body>
 <div class="wrap">
-<nav><div class="logo">Glow<span>reel</span></div><a class="btn" href="mailto:assaf12228@gmail.com?subject=Free%20sample%20ad">Get a free sample</a></nav>
+<nav><div class="logo">Glow<span>reel</span></div><a class="btn" href="#sample">Get a free sample</a></nav>
 
 <h1>Scroll-stopping ads for small skincare brands.</h1>
 <p class="lead">You made something beautiful by hand. We turn your product photos into polished ad images and short videos that make people stop scrolling — in 48 hours, without a photoshoot.</p>
-<a class="btn alt" href="mailto:assaf12228@gmail.com?subject=Free%20sample%20ad">Send me a free sample ad</a>
+<a class="btn alt" href="#sample">Send me a free sample ad</a>
 
 <section>
 <h2>From a plain jar to an ad</h2>
@@ -66,6 +71,17 @@ footer{padding:40px 0;color:var(--soft);font-size:14px;border-top:1px solid var(
 </div>
 </section>
 
+<form class="form" id="sample" action="https://formsubmit.co/assafdropship9@gmail.com" method="POST">
+<h3>Get your free sample ad</h3>
+<input type="hidden" name="_subject" value="New free-sample request (glowreel.studio)">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://glowreel.studio/thanks">
+<input type="text" name="_honey" style="display:none">
+<input name="name" placeholder="Your name" required>
+<input type="email" name="email" placeholder="Your email" required>
+<input name="store" placeholder="Your store or product link" required><button type="submit">Send me my free sample</button>
+</form>
 <footer>© 2026 Glowreel Studio · Made for makers.</footer>
 </div>
 </body>

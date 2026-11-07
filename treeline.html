@@ -23,6 +23,11 @@ p{color:var(--soft);margin-bottom:22px}
 .copy .cta{display:inline-block;margin-top:10px;background:var(--accent);padding:10px 18px;border-radius:999px;font-weight:600;font-size:14px}
 .btn{display:block;text-align:center;background:var(--ink);color:#fff;text-decoration:none;padding:15px;border-radius:999px;font-weight:600;margin-top:26px}
 .note{font-size:13px;text-align:center;margin-top:14px}
+
+.form{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:26px}
+.form h3{font-family:Fraunces,serif;font-size:22px;margin-bottom:12px;color:var(--ink)}
+.form input,.form textarea{width:100%;font:inherit;font-size:16px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;margin-bottom:10px;background:#fff;color:var(--ink)}
+.form button{width:100%;border:0;cursor:pointer;background:var(--ink);color:#fff;padding:15px;border-radius:999px;font-weight:600;font-size:16px}
 </style>
 </head>
 <body>
@@ -41,7 +46,17 @@ p{color:var(--soft);margin-bottom:22px}
 </div>
 </div>
 
-<a class="btn" href="mailto:assaf12228@gmail.com?subject=Treeline%20Farms%20-%20video%20version">Want the video version? Just reply</a>
+<form class="form" id="sample" action="https://formsubmit.co/assafdropship9@gmail.com" method="POST">
+<h3>Want the video version too?</h3>
+<input type="hidden" name="_subject" value="Treeline Farms wants the video version">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://glowreel.studio/thanks">
+<input type="text" name="_honey" style="display:none">
+<input type="hidden" name="brand" value="Treeline Farms"><input name="name" placeholder="Your name" required>
+<input type="email" name="email" placeholder="Your email" required>
+<button type="submit">Yes, send me the video</button>
+</form>
 <p class="note">Glowreel makes ad images and short videos for indie skincare brands, from $49.</p>
 </div>
 </body>
